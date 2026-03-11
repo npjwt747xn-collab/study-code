@@ -122,7 +122,12 @@ The function should:
    * Homework
    * Midterm
    * Final exam
-3. Store the results using **call-by-reference parameters**
+3. Store all inputs using **call-by-reference parameters**
+4. Ensure that the scores are in the range of [0, 100] and if not:
+   * Reset error status
+   * flush buffer
+   * request another input
+5. Use portable data types to ensure the most efficient execution of the code
 
 #### Example Input
 
@@ -164,7 +169,10 @@ that calculates the final grade based on the rules below:
 | ≥ 80  | B     |
 | ≥ 70  | C     |
 | ≥ 60  | D     |
-| < 60  | F     |
+| ≥ 50  | E     |
+| < 50  | F     |
+
+The parameter letter_grade must be of type __string__.
 
 Return the results using **reference parameters**.
 
@@ -190,12 +198,18 @@ It also determines a status string based on the letter grade using __string comp
 Letter       	Status
 -----------------------
 A,B,C	        PASS
-D	            CONDITIONAL PASS
+D,E	            CONDITIONAL PASS
 F	            FAIL
 ```
 
 The function __printReport__ should use manipulators to format the report card.
 
+You should use at least:
+```cpp
+std::left and std::right
+std::setw(n)
+std::setprecision(n)
+```
 #### Example Output
 
 ```
@@ -218,11 +232,12 @@ Status          : Pass
 
 ---
 
-### Step 4 — Main Function
+### Step 4 — Other requirements
 
 Your `main()` should:
 
 1. Declare all required variables
 2. Call the functions in the correct order
 3. Print the final report
-4. Write the report into a text-file using __std::ofstream__
+
+The program should be implemented in a modular way using header files.
