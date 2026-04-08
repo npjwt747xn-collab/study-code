@@ -51,7 +51,7 @@ g++ helloWorld.cpp -o helloWorld
 * Feel free to repeat this process on your local machine to ensure a correct setup there too
 * If you struggle with these steps or wonder how to get running on your private, local machine, you can follow the lab1 of the C course which can be found [in this same repo](https://github.com/christian-braunagel/study-code/tree/main/courses/coding-in-C/Lab_1)
 
-## 🟢 Section II: Age Validation
+## 🟢 Section II: Our C++ coding convention
 The goal of this section is to familiarize yourself with the C++ coding convention of this course.
 
 ### Task Description
