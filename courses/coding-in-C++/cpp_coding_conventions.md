@@ -44,11 +44,13 @@ Use names that describe purpose clearly.
 
 ### Rules
 
-- **Variables and parameters:** `lower_snake_case`
-- **Functions:** `lower_snake_case`, preferably verbs
+- **Variables and parameters:** `lower_snake_case` or `camelCase`
+- **Functions / methods:** `lower_snake_case` or `camelCase`, preferably verbs
 - **Constants:** `UPPER_SNAKE_CASE`
-- **Classes / methods / structs / enums:** `PascalCase`
+- **Classes / structs / enums:** `PascalCase`
 - **Pointers:** start with __p___ or __ptr___
+
+**Important: No matter what style you choose: Be consistent in your usage.**
 
 ### Good
 ```cpp
