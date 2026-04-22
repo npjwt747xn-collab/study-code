@@ -100,7 +100,9 @@ Write a **generic function with two type parameters** to print such pairs.
 #### Requirements
 
 - Accept two values of different types
-- Output example:
+- Accept two string parameters as labels
+- Output syntax and example:
+  - label1: value1 | label2: value2
   - `Channel: motor_temp | Priority: 2`
 
 ---
